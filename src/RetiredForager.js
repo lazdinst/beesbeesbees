@@ -1,11 +1,14 @@
 var RetiredForagerBee = function() {
   ForagerBee.call(this);
-    
+  this.age = 40;
+  this.job = 'gamble';
+  this.canFly = false;
+  this.color = 'grey';
 };
 
 RetiredForagerBee.prototype  = Object.create(ForagerBee.prototype);
-RetiredForagerBee.prototype.constructor = ForagerBee;
-
+RetiredForagerBee.prototype.constructor = RetiredForagerBee;
+RetiredForagerBee.prototype.forage = function () {}
 
 // Create a RetiredForagerBee class, in pseudoclassical style, with:
 // call the ForagerBee superclass
